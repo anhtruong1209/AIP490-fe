@@ -32,32 +32,32 @@ const faceBackgroundLeftData = [
 ];
 const faceBackgroundRightData = [
   {
-    src: `/images/demo/background/mauhong.png`,
+    src: `/images/demo/glass/glasses_01.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src:`/images/demo/background/bg.jpeg`,
+    src:`/images/demo/glass/glasses_02.png`,
     altImg: "result2",
     altThumb: "thumbnail2",
   },
   {
-    src: `/images/demo/background/mauvang.png`,
+    src: `/images/demo/glass/glasses_03.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/background/bg2.jpeg`,
+    src: `/images/demo/glass/glasses_01.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/background/bg3.jpeg`,
+    src: `/images/demo/glass/glasses_02.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/background/bg4.jpeg`,
+    src: `/images/demo/glass/glasses_03.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },

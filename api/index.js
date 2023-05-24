@@ -1,7 +1,7 @@
 import axios from 'axios'
 var formData = require('form-data');
 const BASE_URL = "http://localhost:8000"
-const ROUTER_BODY_BACKGROUND = "/v1/body_background"
+const ROUTER_BODY_BACKGROUND = "/v1/glass_face"
 
 
 export const getBodyBackgroundInputImage = async (dataImage1, dataImage2, cancelTokenSource) => {
