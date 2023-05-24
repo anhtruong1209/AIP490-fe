@@ -1,73 +1,64 @@
+const baseRs =  "https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/" 
 const faceBackgroundLeftData = [
   {
-    src:`/images/demo/background/baby2.jpeg`,
+    src: baseRs + `demo/human/human_01.png`,
     altImg: "result2",
     altThumb: "thumbnail2",
   },
   {
-    src: `/images/demo/background/gaixinh.jpeg`,
+    src: baseRs + `demo/human/human_02.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/background/demo-pic4.jpg`,
+    src: baseRs + `demo/human/human_03.jpeg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/detection/25.jpeg`,
+    src: baseRs + `demo/human/human_01.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/detection/21.jpeg`,
+    src: baseRs + `demo/human/human_02.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/33.jpg`,
+    src: baseRs + `demo/human/human_03.jpeg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
 ];
 const faceBackgroundRightData = [
   {
-    src: `/images/demo/glass/glasses_01.png`,
+    src: baseRs + `demo/glass/glasses_01.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src:`/images/demo/glass/glasses_02.png`,
+    src: baseRs + `demo/glass/glasses_02.png`,
     altImg: "result2",
     altThumb: "thumbnail2",
   },
   {
-    src: `/images/demo/glass/glasses_03.png`,
+    src: baseRs + `demo/glass/glasses_03.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/glass/glasses_01.png`,
+    src: baseRs + `demo/glass/glasses_01.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/glass/glasses_02.png`,
+    src: baseRs + `demo/glass/glasses_02.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: `/images/demo/glass/glasses_03.png`,
-    altImg: "result4",
-    altThumb: "thumbnail4",
-  },
-  {
-    src: `/images/demo/background/bg5.jpeg`,
-    altImg: "result4",
-    altThumb: "thumbnail4",
-  },
-  {
-    src: `/images/demo/background/mautim.jpg`,
+    src: baseRs + `demo/glass/glasses_03.png`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
