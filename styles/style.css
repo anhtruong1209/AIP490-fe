@@ -3722,6 +3722,7 @@ Team Area Four Style
 
 .single-team .team-single-img img {
   border-radius: 50%;
+  width: 200px;
 }
 
 .single-team .team-single-img .team-img {

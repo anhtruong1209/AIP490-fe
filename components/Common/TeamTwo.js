@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-
+import baseRs from '../../utils/baseRs';
 class TeamTwo extends Component {
     render() {
         return (
@@ -16,10 +16,10 @@ class TeamTwo extends Component {
                         <div className="col-lg-4 col-sm-6">
                             <div className="single-team active">
                                 <div className="team-single-img">
-                                    <img src="/images/team/ava1.jpg" alt="Image" />
+                                    <img src={baseRs + "team/ava1.jpg"} alt="Image" />
 
                                     <div className="team-img">
-                                        <img src="/images/team/team-shape.png" alt="Image" />
+                                        <img src={baseRs + "team/team-shape.png"} alt="Image" />
                                     </div>
                                 </div>
 
@@ -56,10 +56,10 @@ class TeamTwo extends Component {
                         <div className="col-lg-4 col-sm-6">
                             <div className="single-team active">
                                 <div className="team-single-img">
-                                    <img src="/images/team/ava2.jpg" alt="Image" />
+                                    <img src={baseRs + "team/ava2.jpg"} alt="Image" />
 
                                     <div className="team-img">
-                                        <img src="/images/team/team-shape.png" alt="Image" />
+                                        <img src={baseRs + "team/team-shape.png"} alt="Image" />
                                     </div>
                                 </div>
 
@@ -96,10 +96,10 @@ class TeamTwo extends Component {
                         <div className="col-lg-4 col-sm-6 offset-sm-3 offset-lg-0">
                             <div className="single-team active">
                                 <div className="team-single-img">
-                                    <img src="/images/team/ava3.jpg" alt="Image" />
+                                    <img src={baseRs + "team/ava3.jpg"} alt="Image" />
 
                                     <div className="team-img">
-                                        <img src="/images/team/team-shape.png" alt="Image" />
+                                        <img src={baseRs + "team/team-shape.png"} alt="Image" />
                                     </div>
                                 </div>
 

@@ -1,4 +1,4 @@
-const baseRs =  "https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/" 
+import baseRs from '../../../../utils/baseRs';
 const faceBackgroundLeftData = [
   {
     src: baseRs + `demo/human/human_01.png`,
