@@ -55,7 +55,7 @@ class AppDemoContainer extends Component {
             type: "slide",
             width: "100%",
             rewind: true,
-            gap: "1rem",
+            gap: "1.3rem",
             pagination: false,
             fixedWidth: 110,
             fixedHeight: 110,
@@ -96,7 +96,7 @@ class AppDemoContainer extends Component {
                             <Splide options={secondaryOptions} ref={this.secondaryRef} >
                                 {data_sample.faceBackgroundLeftData.map((data, i) => (
                                 <SplideSlide key={i} >
-                                    <img style={{width:'100%', height:'100%',objectFit:'contain'}} src={data.src} alt={data.altThumb} />
+                                    <img src={data.src} alt={data.altThumb} />
                                 </SplideSlide>
                                 ))}
                             </Splide>
