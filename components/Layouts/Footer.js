@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import baseRs from '../../utils/baseRs';
+import withTransHook from '../../HOC/withTranslate';
+import { withRouter } from 'next/router'
 class Footer extends Component {
     render() {
         let currentYear = new Date().getFullYear();
+        const { router, trans } = this.props
         return (
             <>
                 <footer className="footer-top-area pt-100 pb-70">
@@ -15,7 +18,7 @@ class Footer extends Component {
                                         <img src={baseRs + "icon/logo_fpt.png"} alt="Image" />
                                     </a>
 
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestiae corporis, magni maxime perferendis ducimus totam officiis sit exercitationem sed odio debitis minus cumque dolores dicta.</p>
+                                    <p>{trans["footer.content"]}</p>
 
                                     <ul className="social-icon">
                                         <li>
@@ -104,34 +107,10 @@ class Footer extends Component {
 
                                     <ul>
                                         <li>
-                                            <Link href="/about-us">
-                                                <a>
-                                                    <i className="right-icon bx bx-chevrons-right"></i>
-                                                    About Us
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
                                             <Link href="/services">
                                                 <a>
                                                     <i className="right-icon bx bx-chevrons-right"></i>
                                                     Services
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/pricing">
-                                                <a>
-                                                    <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Pricing
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/team">
-                                                <a>
-                                                    <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Team
                                                 </a>
                                             </Link>
                                         </li>
@@ -227,4 +206,4 @@ class Footer extends Component {
     }
 }
 
-export default Footer;
+export default withRouter(withTransHook(Footer));
