@@ -1,6 +1,6 @@
 import axios from 'axios'
 var formData = require('form-data');
-const BASE_URL = "http://localhost:8000"
+const BASE_URL = "https://aip-be.onrender.com"
 const ROUTER_BODY_BACKGROUND = "/v1/glass_face"
 
 
