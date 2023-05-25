@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Layouts/Navbar';
 import PageBanner from '../components/Common/PageBanner';
-import TeamCard from '../components/Team/TeamCard';
 import Footer from '../components/Layouts/Footer';
 
 class Team extends Component {
@@ -15,7 +14,6 @@ class Team extends Component {
                     homePageText="Home" 
                     activePageText="Team" 
                 /> 
-                <TeamCard />
                 <Footer />
             </>
         );

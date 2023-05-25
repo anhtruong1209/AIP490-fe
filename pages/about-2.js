@@ -3,7 +3,6 @@ import Navbar from '../components/Layouts/Navbar';
 import PageBanner from '../components/Common/PageBanner';
 import About from '../components/AboutTwo/About';
 import MakeYourBusiness from '../components/Common/MakeYourBusiness';
-import PartnerSlider from '../components/Common/PartnerSlider';
 import Footer from '../components/Layouts/Footer';
 
 class About2 extends Component {
@@ -19,7 +18,6 @@ class About2 extends Component {
                 />
                 <About />
                 <MakeYourBusiness />
-                <PartnerSlider />
                 <Footer />
             </>
         );

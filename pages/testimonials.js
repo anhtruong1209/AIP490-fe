@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Layouts/Navbar';
 import PageBanner from '../components/Common/PageBanner';
-import TestimonialsContent from '../components/Testimonials/TestimonialsContent';
 import Footer from '../components/Layouts/Footer';
 
 class Testimonials extends Component {
@@ -15,7 +14,6 @@ class Testimonials extends Component {
                     homePageText="Home" 
                     activePageText="Testimonials" 
                 /> 
-                <TestimonialsContent />
                 <Footer />
             </>
         );

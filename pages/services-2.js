@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../components/Layouts/Navbar';
 import PageBanner from '../components/Common/PageBanner';
-import ServicesStyleTwo from '../components/Services/ServicesStyleTwo';
 import MakeYourBusiness from '../components/Common/MakeYourBusiness';
 import Footer from '../components/Layouts/Footer';
 
@@ -16,7 +15,6 @@ class Services2 extends Component {
                     homePageText="Home" 
                     activePageText="Services Style Two" 
                 /> 
-                <ServicesStyleTwo />
                 <MakeYourBusiness />
                 <Footer />
             </>
