@@ -3,7 +3,7 @@ import * as React from 'react';
 import createEmotionServer from '@emotion/server/create-instance';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
-
+import baseRs from '../utils/baseRs';
 class MyDocument extends Document {
     
     static async getInitialProps(ctx) {
@@ -50,7 +50,7 @@ class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap"
                         rel="stylesheet"
                     />
-                    <link rel="icon" type="image/png" href="/images/fpt-logo.jpg"></link>
+                    <link rel="icon" type="image/png" href={baseRs + "icon/logo_fpt.png"}></link>
                 </Head>
                 <body>
                     <Main />

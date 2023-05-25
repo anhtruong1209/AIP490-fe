@@ -4,7 +4,7 @@ import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 import baseUrl from '../../utils/baseUrl'
-
+import baseRs from '../../utils/baseRs'
 const alertContent = () => {
     MySwal.fire({
         title: 'Congratulations!',
@@ -142,7 +142,7 @@ const ContactForm = () => {
                     <div className="col-lg-6 col-md-12">
                         <div className="contact-img">
                             <img 
-                                src="/images/contact-img.png" 
+                                src={baseRs + "others/contact-img.png"}
                                 alt="Image" 
                             />
                         </div>

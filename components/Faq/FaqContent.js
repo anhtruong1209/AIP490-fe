@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import baseRs from '../../utils/baseRs';
 import {
     Accordion,
     AccordionItem,
@@ -88,7 +89,7 @@ class FaqContent extends Component {
 
                         <div className="col-lg-4">
                             <div className="faq-img">
-                                <img src="/images/faq-img.png" alt="Image" />
+                                <img src={baseRs + "others/faq-img.png"} alt="Image" />
                             </div>
                         </div>
                     </div>

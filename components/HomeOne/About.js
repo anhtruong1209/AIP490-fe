@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import withTransHook from '../../HOC/withTranslate';
-
+import baseRs from '../../utils/baseRs';
 const About = (props) => {
     const { trans } = props
     return (
@@ -9,7 +9,7 @@ const About = (props) => {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="about-img">
-                            <img src="/images/about-img.png" alt="Image" />
+                            <img src={baseRs + "others/about-img.png"} alt="Image" />
                         </div>
                     </div>
 

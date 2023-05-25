@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
 import NewsSidebar from './NewsSidebar';
-
+import baseRs from '../../utils/baseRs';
 class NewsGridOne extends Component {
     render() {
         return (
@@ -15,7 +15,7 @@ class NewsGridOne extends Component {
                                         <div className="blog-img">
                                             <Link href="/news-details">
                                                 <a>
-                                                    <img src="/images/blog/blog4.png" alt="Image" />
+                                                    <img src={baseRs + "/blog/blog4.png"} alt="Image" />
                                                 </a>
                                             </Link>
 
@@ -60,7 +60,7 @@ class NewsGridOne extends Component {
                                         <div className="blog-img">
                                             <Link href="/news-details">
                                                 <a>
-                                                    <img src="/images/blog/blog5.png" alt="Image" />
+                                                    <img src={baseRs + "/blog/blog5.png"} alt="Image" />
                                                 </a>
                                             </Link>
 
@@ -105,7 +105,7 @@ class NewsGridOne extends Component {
                                         <div className="blog-img">
                                             <Link href="/news-details">
                                                 <a>
-                                                    <img src="/images/blog/blog6.png" alt="Image" />
+                                                    <img src={baseRs + "/blog/blog6.png"}alt="Image" />
                                                 </a>
                                             </Link>
 
@@ -150,7 +150,7 @@ class NewsGridOne extends Component {
                                         <div className="blog-img">
                                             <Link href="/news-details">
                                                 <a>
-                                                    <img src="/images/blog/blog7.png" alt="Image" />
+                                                    <img src={baseRs + "/blog/blog7.png"} alt="Image" />
                                                 </a>
                                             </Link>
 
@@ -195,7 +195,7 @@ class NewsGridOne extends Component {
                                         <div className="blog-img">
                                             <Link href="/news-details">
                                                 <a>
-                                                    <img src="/images/blog/blog8.png" alt="Image" />
+                                                    <img src={baseRs + "/blog/blog8.png"}alt="Image" />
                                                 </a>
                                             </Link>
 
@@ -240,7 +240,7 @@ class NewsGridOne extends Component {
                                         <div className="blog-img">
                                             <Link href="/news-details">
                                                 <a>
-                                                    <img src="/images/blog/blog9.png" alt="Image" />
+                                                    <img src={baseRs + "/blog/blog9.png"} alt="Image" />
                                                 </a>
                                             </Link>
 

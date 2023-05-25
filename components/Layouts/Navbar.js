@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Link from '../../utils/ActiveLink';
 import withTransHook from '../../HOC/withTranslate';
 import { withRouter } from 'next/router'
-
+import baseRs from '../../utils/baseRs';
 class Navbar extends Component {
     // Navbar
     _isMounted = false;
@@ -43,7 +43,7 @@ class Navbar extends Component {
                         <div className="container">
                             <Link href="/">
                                 <a className="navbar-brand">
-                                    <img src="/images/fpt-logo.jpg" alt="logo"/>
+                                    <img src={baseRs + "icon/logo_fpt.png"} alt="logo"/>
                                 </a>
                             </Link>
 
@@ -70,7 +70,6 @@ class Navbar extends Component {
 
                                         <Link href="/" activeClassName="active">
                                             <a className="nav-link" > {trans["nav-item.about.english"]}
-                                                {/*About <i className='bx bx-chevron-down'></i>*/}
                                             </a>
                                         </Link>
                                     </li>
@@ -100,15 +99,6 @@ class Navbar extends Component {
                                             </li>
                                         </ul>
                                     </li>
-
-                                    {/* <li className="nav-item">
-                                        <Link href="/pricing">
-                                            <a className="nav-link" style={{padding: "4px"}}>
-                                                {trans["nav-link.price.english"]}
-                                            </a>
-                                        </Link>
-                                        
-                                    </li> */}
 
                                     <li className="nav-item" style={{padding:'14px'}} >
                                         <Link href="/contact"  activeClassName="active">
@@ -149,13 +139,6 @@ class Navbar extends Component {
                                         </ul>
                                     </li>
                                 </ul>
-                                {/* <div className="others-options">
-                                    <Link href="/">
-                                        <a className="default-btn">
-                                        {trans["nav-link.login.english"]} <i className="bx bx-log-in-circle"></i>
-                                        </a>
-                                    </Link>
-                                </div> */}
                             </div>
                         </div>
                     </nav>

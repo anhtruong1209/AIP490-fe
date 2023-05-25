@@ -1375,7 +1375,7 @@ Main Banner Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/images/home-one/shape/animate4.png);
+  background-image: url(https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/home-one/shape/animate4.png);
   -webkit-animation: focus-one 1s linear 1s infinite;
           animation: focus-one 1s linear 1s infinite;
   z-index: -1;
@@ -1388,7 +1388,7 @@ Main Banner Area Style
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/images/home-one/shape/animate4.png);
+  background-image: url(https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/home-one/shape/animate4.png);
   -webkit-animation: moVebounce 5s linear infinite;
           animation: moVebounce 5s linear infinite;
   z-index: -1;
@@ -2520,7 +2520,8 @@ Footer Top Area Style
   font-weight: bold;
 }
 .single-widget .logo img {
-  max-width: 75px;
+  width: 70px;
+  height: 70px;
   border-radius: 15px;
 }
 
@@ -3879,15 +3880,15 @@ Arduix SliderArea Style
 }
 
 .arduix-slider-item.item-bg1 {
-  background-image: url("/images/home-five/slider1.jpg");
+  background-image: url("https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/home-five/slider1.jpg");
 }
 
 .arduix-slider-item.item-bg2 {
-  background-image: url("/images/home-five/slider2.jpg");
+  background-image: url("https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/home-five/slider2.jpg");
 }
 
 .arduix-slider-item.item-bg3 {
-  background-image: url("/images/home-five/slider3.jpg");
+  background-image: url("https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/home-five/slider3.jpg");
 }
 
 .arduix-slider-item .arduix-slider-text {
@@ -5335,19 +5336,19 @@ Blog Details Area Style
 }
 
 .news-details-area .widget-area .widget-posts-thumb .item .thumb .fullimage.bg1 {
-  background-image: url(/images/blog-details/popular-posts-1.png);
+  background-image: url(https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/blog-details/popular-posts-1.png);
 }
 
 .news-details-area .widget-area .widget-posts-thumb .item .thumb .fullimage.bg2 {
-  background-image: url(/images/blog-details/popular-posts-2.png);
+  background-image: url(https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/blog-details/popular-posts-2.png);
 }
 
 .news-details-area .widget-area .widget-posts-thumb .item .thumb .fullimage.bg3 {
-  background-image: url(/images/blog-details/popular-posts-3.png);
+  background-image: url(https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/blog-details/popular-posts-3.png);
 }
 
 .news-details-area .widget-area .widget-posts-thumb .item .thumb .fullimage.bg4 {
-  background-image: url(/images/blog-details/popular-posts-4.png);
+  background-image: url(https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/blog-details/popular-posts-4.png);
 }
 
 .news-details-area .widget-area .widget-posts-thumb .item .info {
@@ -6259,7 +6260,7 @@ Service Details Area Style
 }
 
 .service-details-area{
-  background: url("../public/images/AI.png") no-repeat center center fixed; 
+  background: url("https://raw.githubusercontent.com/anhtruong1209/AIP490-resource/main/others/AI.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

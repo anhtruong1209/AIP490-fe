@@ -16,7 +16,7 @@ const faceBackgroundLeftData = [
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/human/human_01.png`,
+    src: baseRs + `demo/human/human_04.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },

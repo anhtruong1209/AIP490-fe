@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import withTransHook from '../../HOC/withTranslate';
+import baseRs from '../../utils/baseRs';
 const Services = (props) => {
     const { trans } = props
     return (
@@ -52,14 +53,13 @@ const Services = (props) => {
                 </div>
             </div>
 
-            {/* Shape Images */}
             <div className="offer-shape">
-                <img src="/images/shape/services-shape/1.png" alt="Image" />
-                <img src="/images/shape/services-shape/2.png" alt="Image" />
-                <img src="/images/shape/services-shape/3.png" alt="Image" />
-                <img src="/images/shape/services-shape/4.png" alt="Image" />
-                <img src="/images/shape/services-shape/5.png" alt="Image" />
-                <img src="/images/shape/services-shape/6.png" alt="Image" />
+                <img src={baseRs + "shape/services-shape/1.png"} alt="Image" />
+                <img src={baseRs + "shape/services-shape/2.png"} alt="Image" />
+                <img src={baseRs + "shape/services-shape/3.png"} alt="Image" />
+                <img src={baseRs + "shape/services-shape/4.png"} alt="Image" />
+                <img src={baseRs + "shape/services-shape/5.png"} alt="Image" />
+                <img src={baseRs + "shape/services-shape/6.png"} alt="Image" />
             </div>
         </section>
     )

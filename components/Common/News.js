@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-
+import baseRs from '../../utils/baseRs';
 class News extends Component {
     render() {
         return (
@@ -18,7 +18,7 @@ class News extends Component {
                                 <div className="blog-img">
                                     <Link href="/news-details">
                                         <a>
-                                            <img src="/images/blog/blog1.png" alt="Image" />
+                                            <img src={baseRs + "/blog/blog1.png"} alt="Image" />
                                         </a>
                                     </Link>
 
@@ -63,7 +63,7 @@ class News extends Component {
                                 <div className="blog-img">
                                     <Link href="/news-details">
                                         <a>
-                                            <img src="/images/blog/blog2.png" alt="Image" />
+                                            <img src={baseRs + "/blog/blog2.png"} alt="Image" />
                                         </a>
                                     </Link>
 
@@ -108,7 +108,7 @@ class News extends Component {
                                 <div className="blog-img">
                                     <Link href="/news-details">
                                         <a>
-                                            <img src="/images/blog/blog3.png" alt="Image" />
+                                            <img src={baseRs + "/blog/blog3.png"} alt="Image" />
                                         </a>
                                     </Link>
 

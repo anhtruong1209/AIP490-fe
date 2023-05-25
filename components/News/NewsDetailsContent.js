@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import NewsSidebar from './NewsSidebar';
 import Link from 'next/link';
 import CommentsArea from './CommentsArea';
-
+import baseRs from '../../utils/baseRs';
 class NewsDetailsContent extends Component {
     render() {
         return (
@@ -12,7 +12,7 @@ class NewsDetailsContent extends Component {
                         <div className="col-lg-8 col-md-12">
                             <div className="blog-details-desc">
                                 <div className="article-image">
-                                    <img src="/images/blog-details/blog-details.jpg" alt="Image" />
+                                    <img src={baseRs + "blog-details/blog-details.jpg"} alt="Image" />
                                 </div>
 
                                 <div className="article-content">

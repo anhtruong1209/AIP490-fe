@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Grid } from '@mui/material'
 import withTransHook from '../../../HOC/withTranslate';
-
+import baseRs from '../../../utils/baseRs';
 class FaceBackgroundScenarios extends Component {
     constructor(props){
         super(props)
@@ -20,11 +20,11 @@ class FaceBackgroundScenarios extends Component {
                         </Grid>
 
                         <Grid item lg={6} md={12} xs={12} justifyContent="right" className="grid-demo-style image" >
-                            <img src={"/images/scene-1.5172dce.jpg"}></img>
+                            <img src={baseRs + "others/scene-1.5172dce.jpg"}></img>
                             <p style={{fontSize:"15px"}}>{trans['screnarios.content15']}</p>
                         </Grid>
                         <Grid item lg={6} md={12} xs={12} justifyContent="left" className="grid-demo-style image" >
-                            <img src={"/images/scene-2.d21c83a.jpg"}></img>
+                            <img src={baseRs + "others/scene-2.d21c83a.jpg"}></img>
                             <p style={{fontSize:"15px"}}>{trans['screnarios.content16']}</p>
                         </Grid>
                     </Grid>

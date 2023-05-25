@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-
+import baseRs from '../../utils/baseRs';
 class Footer extends Component {
     render() {
         let currentYear = new Date().getFullYear();
@@ -12,7 +12,7 @@ class Footer extends Component {
                             <div className="col-lg-3 col-md-6">
                                 <div className="single-widget">
                                     <a href="/" className="logo">
-                                        <img src="/images/fpt-logo.jpg" alt="Image" />
+                                        <img src={baseRs + "icon/logo_fpt.png"} alt="Image" />
                                     </a>
 
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat molestiae corporis, magni maxime perferendis ducimus totam officiis sit exercitationem sed odio debitis minus cumque dolores dicta.</p>
@@ -143,14 +143,6 @@ class Footer extends Component {
                                                 </a>
                                             </Link>
                                         </li>
-                                        <li>
-                                            <Link href="/testimonials">
-                                                <a>
-                                                    <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Testimonials
-                                                </a>
-                                            </Link>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -188,8 +180,8 @@ class Footer extends Component {
                     </div>
 
                     <div className="footer-shape">
-                        <img src="/images/shape/footer-shape-one.png" alt="Image" />
-                        <img src="/images/shape/footer-shape-two.png" alt="Image" />
+                        <img src={baseRs + "shape/footer-shape-one.png"} alt="Image" />
+                        <img src={baseRs + "shape/footer-shape-two.png"} alt="Image" />
                     </div>
                 </footer>
     

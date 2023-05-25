@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'next/link';
-
+import baseRs from '../../utils/baseRs';
 class About extends Component {
     render() {
         return (
@@ -9,7 +9,7 @@ class About extends Component {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="about-img">
-                                <img src="/images/about-img-three.png" alt="Image" />
+                                <img src={baseRs + "others/about-img-three.png"} alt="Image" />
                             </div>
                         </div>
 

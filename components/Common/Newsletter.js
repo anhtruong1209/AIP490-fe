@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import baseRs from '../../utils/baseRs';
 class Newsletter extends Component {
     render() {
         return (
@@ -21,7 +21,7 @@ class Newsletter extends Component {
 
                         <div className="col-lg-2">
                             <div className="newsletter-img">
-                                <img src="/images/newsletter-img.png" alt="Image" />
+                                <img src={baseRs +"/newsletter-img.png"} alt="Image" />
                             </div>
                         </div>
 
@@ -35,9 +35,9 @@ class Newsletter extends Component {
                 </div>
 
                 <div className="newsletter-shape">
-                    <img src="/images/shape/newsletter-shape-one.png" alt="Image" />
-                    <img src="/images/shape/newsletter-shape-one.png" alt="Image" />
-                    <img src="/images/shape/newsletter-shape-two.png" alt="Image" />
+                    <img src={baseRs + "shape/newsletter-shape-one.png"} alt="Image" />
+                    <img src={baseRs + "shape/newsletter-shape-one.png"} alt="Image" />
+                    <img src={baseRs + "shape/newsletter-shape-two.png"} alt="Image" />
                 </div>
             </div>
         );
