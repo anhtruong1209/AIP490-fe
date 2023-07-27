@@ -48,47 +48,47 @@ const faceBackgroundLeftData = [
 ];
 const faceBackgroundRightData = [
   {
-    src: baseRs + `demo/glass/001744_1.jpg`,
+    src: baseRs + `demo/clothes/001744_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/glass/004325_1.jpg`,
+    src: baseRs + `demo/clothes/004325_1.jpg`,
     altImg: "result2",
     altThumb: "thumbnail2",
   },
   {
-    src: baseRs + `demo/glass/002022_1.jpg`,
+    src: baseRs + `demo/clothes/002022_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/glass/014652_1.jpg`,
+    src: baseRs + `demo/clothes/014652_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/glass/010143_1.jpg`,
+    src: baseRs + `demo/clothes/010143_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/glass/010608_1.jpg`,
+    src: baseRs + `demo/clothes/010608_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/glass/012578_1.jpg`,
+    src: baseRs + `demo/clothes/012578_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/glass/09595_1.jpg`,
+    src: baseRs + `demo/clothes/09595_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/glass/015392_1.jpg`,
+    src: baseRs + `demo/clothes/015392_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
