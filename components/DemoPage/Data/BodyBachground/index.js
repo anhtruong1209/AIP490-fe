@@ -83,7 +83,7 @@ const faceBackgroundRightData = [
     altThumb: "thumbnail4",
   },
   {
-    src: baseRs + `demo/clothes/09595_1.jpg`,
+    src: baseRs + `demo/clothes/009595_1.jpg`,
     altImg: "result4",
     altThumb: "thumbnail4",
   },
