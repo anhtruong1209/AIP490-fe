@@ -23,12 +23,14 @@ class BodyBackgroundContent extends Component {
       returnFaceLeft:"",
       returnFaceRight:"",
       isUploadSuccess:false,
-      returnResultJSON: null
+      returnResultJSON: null,
+      nameImage1 : Data.faceBackground.faceBackgroundLeftData[0].src,
+      nameImage2 : Data.faceBackground.faceBackgroundRightData[0].src,
     }
     this.faceVerifyData = Data.faceBackground
 }
 
-handleAPI = async (base64Image1,base64Image2) => {
+handleAPI = async (base64Image1,base64Image2,nameImage1,nameImage2) => {
   if (cancel !== undefined) {
     cancel();
   }
@@ -38,7 +40,7 @@ handleAPI = async (base64Image1,base64Image2) => {
   })
   let res;
   try {
-    res = await getBodyBackgroundInputImage(base64Image1,base64Image2, new CancelToken(function executor(c) {cancel = c}));
+    res = await getBodyBackgroundInputImage(base64Image1,base64Image2,nameImage1,nameImage2, new CancelToken(function executor(c) {cancel = c}));
     if (res !== undefined && res!== null) {
         this.setState({
           loading: false,
@@ -68,19 +70,23 @@ componentDidMount(){
 }
 
 handleImageGalleryChange1 = async (index) => {
-  const URL = this.faceVerifyData.faceBackgroundLeftData[index].src
+  const leftData = this.faceVerifyData.faceBackgroundLeftData[index];
+  const URL = rightData.src;
   const base64 = await URLtoBase64(URL)
   this.setState({
     inputImage1: base64,
-    returnFaceLeft: ""
+    returnFaceLeft: "",
+    nameImage1: leftData.src
   })
 }
 handleImageGalleryChange2 = async (index) => {
-  const URL = this.faceVerifyData.faceBackgroundRightData[index].src
+  const rightData = this.faceVerifyData.faceBackgroundRightData[index];
+  const URL = rightData.src;
   const base64 = await URLtoBase64(URL)
   this.setState({
     inputImage2: base64,
-    returnFaceRight: ""
+    returnFaceRight: "",
+    nameImage2: rightData.src
   })
 }
 handleChange = async (selectorFiles,index) =>{
@@ -99,15 +105,23 @@ handleChange = async (selectorFiles,index) =>{
   }
 
 }
+
+// Function to extract filename from URL
+extractFilenameFromURL = (url) => {
+  const parts = url.split('/');
+  return parts[parts.length - 1];
+};
+
+
 handleImgURL =  (url,index) => {
   if(this.checkURL(url)){
     if(index===1){
       this.setState({
-        inputImage1: url
+        inputImage1: url,
       })
     } else {
       this.setState({
-        inputImage2: url
+        inputImage2: url,
       })
     }
   } else {
@@ -128,7 +142,9 @@ handleAPICall = async () => {
   const base64_1 = this.checkURL(this.state.inputImage1)?await URLtoBase64(this.state.inputImage1) : this.state.inputImage1
   const base64_2 = this.checkURL(this.state.inputImage2)?await URLtoBase64(this.state.inputImage2) : this.state.inputImage2
 
-  await this.handleAPI(base64_1,base64_2)
+  const nameImage1 = this.extractFilenameFromURL(this.state.nameImage1)
+  const nameImage2 = this.extractFilenameFromURL(this.state.nameImage2)
+  await this.handleAPI(base64_1,base64_2, nameImage1, nameImage2)
 }
 checkURL(url) {
   return url.match(/\.(jpeg|jpg|png)$/) != null;
