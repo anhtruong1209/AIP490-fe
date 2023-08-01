@@ -71,7 +71,7 @@ componentDidMount(){
 
 handleImageGalleryChange1 = async (index) => {
   const leftData = this.faceVerifyData.faceBackgroundLeftData[index];
-  const URL = rightData.src;
+  const URL = leftData.src;
   const base64 = await URLtoBase64(URL)
   this.setState({
     inputImage1: base64,
