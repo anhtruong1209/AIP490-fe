@@ -3,6 +3,8 @@ import { Publish } from '@mui/icons-material'
 import { Grid, CircularProgress } from '@mui/material'
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import CircleLoading from '../../Loading/CircleLoader';
+import withTransHook from '../../../HOC/withTranslate';
+
 class AppDemoContainer extends Component {
     constructor(props){
         super(props)
@@ -51,6 +53,7 @@ class AppDemoContainer extends Component {
     render() {
         const { loading, inputImage1,inputImage2,returnFaceLeft,returnFaceRight, data_sample,handleAPICall, handleImageGalleryChange1, handleImageGalleryChange2,returnResultJSON, handleChange,handleImgURL } = this.props;
         const { activeImg,imgURL } = this.state;
+        const { router, trans } = this.props
         const secondaryOptions = {
             type: "slide",
             width: "100%",
@@ -86,17 +89,17 @@ class AppDemoContainer extends Component {
                         </Grid>
                     </Grid>
                     <div style={{alignItems:'center',display:'flex',justifyContent:'center'}}>
-                        <button className='default-btn btn-two button-custom-compare' onClick={()=>handleAPICall()}>
-                            {loading?"Processing":"Change"}
+                        <button className='default-btn btn-two button-custom-compare' onClick={()=>handleAPICall()} style={{top: '50px'}}>
+                            {loading? trans['button.process']: trans['button.change']}
                         </button>
                     </div>
 
-                    <div className="face-swiper">
+                    <div className="face-swiper" style={{top: '110px'}}>
                         <div style={activeImg === 1 ? { display: "block" } : { display: "none" }} onClick={()=>handleImageGalleryChange1(this.secondaryRef.current.splide.index)} className={loading ? "blurImg" : ""}>
                             <Splide options={secondaryOptions} ref={this.secondaryRef} >
                                 {data_sample.faceBackgroundLeftData.map((data, i) => (
                                 <SplideSlide key={i} >
-                                    <img src={data.src} alt={data.altThumb} />
+                                    <img src={data.src} alt={data.altThumb} style={{width:'100%', height:'100%'}} />
                                 </SplideSlide>
                                 ))}
                             </Splide>
@@ -112,7 +115,7 @@ class AppDemoContainer extends Component {
                         </div>
 
                     </div>
-                    <div className="upload-container">
+                    {/* <div className="upload-container">
                         <div className="file-upload">
                             <div>
                                 <input
@@ -147,11 +150,11 @@ class AppDemoContainer extends Component {
                             </button>
                         </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </>
         );
     }
 }
 
-export default AppDemoContainer;
+export default withTransHook(AppDemoContainer);

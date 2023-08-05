@@ -25,10 +25,11 @@
     "nav-item.contact.english": "Contact",
    
     "footer.content": "The successful implementation of this project has the potential to revolutionize various industries that heavily rely on image analysis, leading to enhanced productivity and decision-making capabilities.",
-    "footer.service-1": "Facial Recognition",
+    "footer.service-1": "Body Recognition",
     "footer.service-2": "Body Recognition",
-    "footer.service-4": "Mobile SDK",
-    "footer.service-5": "Web API",
+    "footer.service-3": "Mobile SDK",
+    "footer.service-4": "Web API",
+    "footer.service-5": "Mobile Application",
     "footer.support": "Support",
     "footer.important": "Important Links",
     "footer.information": "Information Contact", 
@@ -38,6 +39,8 @@
     "footer.address-content": "Hoa Lac Hi-Tech Park Km29 Thang Long Avenue, Thach That District, Hanoi",
     "footer.copyright": "Copyright",
     "footer.copyright2": "All Rights Reserved",
+    "footer.termsandconditions": "Terms and Conditions",
+    "footer.policy": "Terms and Conditions",
     "footer.design": "Designed by",
     "footer.end": "TruongNDAHE141784",
    
@@ -109,9 +112,9 @@
     "face.smooth": "Face Smooth",
     "face.analyze": "Face Analyze",
     "face.cartoon": "Face Cartoon",
-    "face.lanmark": "Face Lanmark",
+    "face.lanmark": "VITON Clothes",
 
-    "industry.content2": "We have been developing the 'SaleMan' project that evaluates the quality of real estate agents through pre-recorded videos. We analyze by comparing close sentences using NLP and hide customer information such as hiding name and phone number. ",
+    "industry.content2": "We have been developing the 'VITON' project that evaluates the quality of real estate agents through pre-recorded videos. We analyze by comparing close sentences using NLP and hide customer information such as hiding name and phone number. ",
     "industry.content3": "We in the same project Doji have integrated a project called 'TryOn' that allows people who come to Doji to experience the product through the Ipad screen.",
     "industry.item1": "Securiy",
     "industry.item2": "Highest",
@@ -172,8 +175,8 @@
     "screnarios.content12": "Pose Classification",
     "screnarios.content13": "Detect Unusual Pose",
     "screnarios.content14": "Behavior Detection",
-    "screnarios.content15": "Glasses TryOn ShowRoom",
-    "screnarios.content16": "Beauty App Glasses",
+    "screnarios.content15": "VITON on Mobile application",
+    "screnarios.content16": "VITON on Mobile application with 3D",
     "screnarios.content17": "Photo Composition",
     "screnarios.content18": "Entertainment Effects",
     "contact.title": "Drop us a message for any query",
@@ -185,5 +188,8 @@
     "contact.details": "Details Contact",
     "send.message": "Send Message",
     "livechat": "Live Chat",
-    "livechat.sub": "Contact us anytime 24/7"
+    "livechat.sub": "Contact us anytime 24/7",
+
+    "button.change": "Change",
+    "button.process": "Processing"
 }

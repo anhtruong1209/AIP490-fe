@@ -76,22 +76,22 @@ class Navbar extends Component {
                                     
                                     <li className="nav-item">
                                         <Link href="/">
-                                            <a className="nav-link" onClick={e => e.preventDefault()}>
+                                            <a className="nav-link" style={{padding: '1px'}} onClick={e => e.preventDefault()}>
                                                 {trans["demopage"]} <i className='bx bx-chevron-down'></i>
                                             </a>
                                         </Link>
 
                                         <ul className="dropdown-menu">
-                                            <li className="nav-item">
+                                            <li className="nav-item" >
                                                 <Link href="/">
-                                                    <a className="nav-link" onClick={e => e.preventDefault()}>
+                                                    <a className="nav-link" onClick={e => e.preventDefault()} >
                                                         {trans["footer.service-1"]} <i className='bx bx-chevron-down'></i>
                                                     </a>
                                                 </Link>
                                                 
                                                 <ul className="dropdown-menu">
                                                     <li className="nav-item">
-                                                        <Link href="/demo/face-landmark" activeClassName="active">
+                                                        <Link href="/demo/viton_clothes" activeClassName="active">
                                                             <a className="nav-link">{trans["face.lanmark"]}</a>
                                                         </Link>
                                                     </li>
@@ -108,7 +108,7 @@ class Navbar extends Component {
                                         </Link>
                                     </li>
 
-                                    <li className="nav-item">
+                                    <li className="nav-item" style={{padding: '11px'}} >
                                         <Link href="/">
                                             <a className="nav-link" onClick={e => e.preventDefault()}>
                                             {trans["nav-item.language.english"]} <i className='bx bx-chevron-down'></i>

@@ -20,7 +20,7 @@ class Contact extends Component {
                 /> 
                 <ContactInfo />
                 <TeamTwo />
-                <ContactForm />
+                {/* <ContactForm /> */}
                 <Footer />
             </>
         );

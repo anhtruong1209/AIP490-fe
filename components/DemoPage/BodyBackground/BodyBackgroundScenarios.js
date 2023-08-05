@@ -20,11 +20,11 @@ class FaceBackgroundScenarios extends Component {
                         </Grid>
 
                         <Grid item lg={6} md={12} xs={12} justifyContent="right" className="grid-demo-style image" >
-                            <img src={baseRs + "others/scene1.jpg"}></img>
+                            <img src={baseRs + "others/scenee1.jpg"}></img>
                             <p style={{fontSize:"15px"}}>{trans['screnarios.content15']}</p>
                         </Grid>
                         <Grid item lg={6} md={12} xs={12} justifyContent="left" className="grid-demo-style image" >
-                            <img src={baseRs + "others/scene2.jpg"}></img>
+                            <img src={baseRs + "others/scenee2.jpg"}></img>
                             <p style={{fontSize:"15px"}}>{trans['screnarios.content16']}</p>
                         </Grid>
                     </Grid>

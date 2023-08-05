@@ -31,7 +31,6 @@ const ContactForm = () => {
         const { name, value } = e.target;
         setContact(prevState => ({ ...prevState, [name]: value }));
     }
-
     const handleSubmit = async e => {
         e.preventDefault();
         try {
@@ -39,7 +38,6 @@ const ContactForm = () => {
             const { name, email, number, subject, text } = contact;
             const payload = { name, email, number, subject, text };
             const response = await axios.post(url, payload);
-            console.log(response);
             setContact(INITIAL_STATE);
             alertContent();
         } catch (error) {
@@ -51,7 +49,7 @@ const ContactForm = () => {
         <div className="main-contact-area pb-100">
             <div className="container">
                 <div className="section-title">
-                    <span>Contact Us</span>
+                    <span>{trans['face.lanmark']}</span>
                     <h2>Drop us a message for any query</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque quibusdam deleniti porro praesentium. Aliquam minus quisquam velit in at nam.</p>
                 </div>

@@ -47,53 +47,45 @@ class Footer extends Component {
 
                             <div className="col-lg-3 col-md-6">
                                 <div className="single-widget">
-                                    <h3>Services</h3>
+                                    <h3>{trans["footer.nav-item.service.english"]}</h3>
                                     <ul>
                                         <li>
-                                            <Link href="/service-details">
+                                            <Link href="/">
                                                 <a>
                                                     <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Big Data
+                                                    {trans["footer.service-1"]}
                                                 </a>
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-details">
+                                            <Link href="/">
                                                 <a>
                                                     <i className="right-icon bx bx-chevrons-right"></i>
-                                                    UI/UX Design
+                                                    {trans["footer.service-2"]}
                                                 </a>
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-details">
+                                            <Link href="/">
                                                 <a>
                                                     <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Desktop Application
+                                                    {trans["footer.service-3"]}
                                                 </a>
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-details">
+                                            <Link href="/">
                                                 <a>
                                                     <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Mobile Application
+                                                    {trans["footer.service-4"]}
                                                 </a>
                                             </Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-details">
+                                            <Link href="/">
                                                 <a>
                                                     <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Product Engineering
-                                                </a>
-                                            </Link>
-                                        </li>
-                                        <li>
-                                            <Link href="/service-details">
-                                                <a>
-                                                    <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Machine Learning
+                                                    {trans["footer.service-5"]}
                                                 </a>
                                             </Link>
                                         </li>
@@ -103,14 +95,14 @@ class Footer extends Component {
 
                             <div className="col-lg-3 col-md-6">
                                 <div className="single-widget">
-                                    <h3>Important Links</h3>
+                                    <h3>{trans['footer.important']}</h3>
 
                                     <ul>
                                         <li>
-                                            <Link href="/services">
+                                            <Link href="/">
                                                 <a>
                                                     <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Services
+                                                    {trans['nav-item.service.english']}
                                                 </a>
                                             </Link>
                                         </li>
@@ -118,7 +110,7 @@ class Footer extends Component {
                                             <Link href="/contact">
                                                 <a>
                                                     <i className="right-icon bx bx-chevrons-right"></i>
-                                                    Support
+                                                    {trans['footer.support']}
                                                 </a>
                                             </Link>
                                         </li>
@@ -128,12 +120,12 @@ class Footer extends Component {
 
                             <div className="col-lg-3 col-md-6">
                                 <div className="single-widget">
-                                    <h3>Information</h3>
+                                    <h3>{trans['footer.information']}</h3>
 
                                     <ul className="information">
                                         <li className="address">
                                             <i className="flaticon-call"></i>
-                                            <span>Phone</span>
+                                            <span>{trans['footer.phone']}</span>
                                             +84 832206397 - Mr. Trường<br></br>
                                             +84 705045677 - Mr. Kỳ<br></br>
                                             +84 816386999 - Mr. Thịnh
@@ -141,7 +133,7 @@ class Footer extends Component {
 
                                         <li className="address">
                                             <i className="flaticon-envelope"></i>
-                                            <span>Email</span>
+                                            <span>{trans['footer.email']}</span>
                                             TruongNDAHE141784@fpt.edu.vn<br></br>
                                             KyNQHE150376@fpt.edu.vn<br></br>
                                             ThinhTTHE151100@fpt.edu.vn
@@ -149,7 +141,7 @@ class Footer extends Component {
 
                                         <li className="address">
                                             <i className="flaticon-maps-and-flags"></i>
-                                            <span>Address</span>
+                                            <span>{trans['footer.address']}</span>
                                             Hoa Lac Hi-Tech Park Km29 Thang Long Avenue, Thach That District, Hanoi
                                         </li>
                                     </ul>
@@ -170,7 +162,7 @@ class Footer extends Component {
                         <div className="row align-items-center">
                             <div className="col-lg-4">
                                 <div className="copy-right">
-                                    <p>Copyright &copy; {currentYear} FPT University. All Rights Reserved</p>
+                                    <p>{trans['footer.copyright']} &copy; {currentYear} FPT University. {trans['footer.copyright2']}</p>
                                 </div>
                             </div>
 
@@ -179,12 +171,12 @@ class Footer extends Component {
                                     <ul>
                                         <li>
                                             <Link href="/terms-conditions">
-                                                <a>Terms & Conditions</a>
+                                                <a>{trans['footer.termsandconditions']}</a>
                                             </Link>
                                         </li>
                                         <li>
                                             <Link href="/privacy-policy">
-                                                <a>Privacy Policy</a>
+                                                <a>{trans['footer.policy']}</a>
                                             </Link>
                                         </li>
                                     </ul>
@@ -194,7 +186,7 @@ class Footer extends Component {
                             <div className="col-lg-3">
                                 <div className="designed">
                                     <p>
-                                        Designed By <i className='bx bx-heart'></i> <a href="#" target="_blank">TruongNDAHE141784</a>
+                                        {trans['footer.design']} <i className='bx bx-heart'></i> <a href="#" target="_blank">TruongNDAHE141784</a>
                                     </p>
                                 </div>
                             </div>

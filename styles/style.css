@@ -6064,6 +6064,7 @@ Service Details Area Style
   height: 100%;
   margin: 0 auto 20px;
   border: 4px solid transparent;
+  padding: 30px;
 }
 .image-container-result {
   position: relative;
