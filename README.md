@@ -10,3 +10,6 @@ npm run start
 
 # Run Docker 
 * docker-compose up
+
+# Build Docker 
+* docker-compose build
